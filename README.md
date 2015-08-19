@@ -1,3 +1,4 @@
+#jQuery CSV to Table
 The jQuery CSV to Table plugin reads in comma separated values (CSV) or tab separated values (TSV) data and generates an HTML table.  Common spreadsheet programs, such as Microsoft Excel, are capable of saving in both CSV and TSV format.
 
 <a href='http://honestbleeps.com/csvtotable/demo.html'>[see it in action]</a>
@@ -24,16 +25,14 @@ $(function() {
 ```
 
 Would produce:
-<table>
-<blockquote><thead>
-<blockquote><tr><th>album</th><th>artist</th><th>price</th></tr>
-</blockquote></thead>
-<tbody>
-<blockquote><tr><td>lateralus</td><td>tool</td><td>13.00</td></tr><tr><td>aenima</td><td>tool</td><td>12.00</td></tr>
-<tr><td>10,000 days</td><td>tool</td><td>14.00</td></tr><tr><td>down in it</td><td>nine inch nails</td><td>3.00</td></tr>
-<tr><td>broken</td><td>nine inch nails</td><td>6.00</td></tr>
-</blockquote></tbody>
-</table></blockquote>
+
+album | artist | price
+----- | ------ | -----
+lateralus | tool | 13.00
+aenima | tool | 12.00
+10,000 days | tool | 14.00
+down in it | nine inch nails | 3.00
+broken | nine inch nails | 6.00
 
 ## Configurable options: ##
   * **separator** - separator to use when parsing CSV/TSV data
