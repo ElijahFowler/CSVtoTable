@@ -52,7 +52,7 @@ broken | nine inch nails | 6.00
     * if not specified, default value is "Loading CSV data..."
 
 
-The plugin will also trigger a "loadComplete" event upon successful render, so that you may use other jQuery plugins/code to modify the resulting table.  One such example is the jQuery tablesorter plugin at http://tablesorter.com/
+The plugin will also trigger a "loadComplete" event upon successful render, so that you may use other jQuery plugins/code to modify the resulting table.  One such example is a jQuery tablesorter plugin like https://www.datatables.net/
 
 The example below shows how to fire code after the loadComplete event is triggered:
 
@@ -62,6 +62,6 @@ $('#CSVTable').CSVToTable('test.csv', {
 	startLine: 1,
 	headers: ['Album Title', 'Artist Name', 'Price ($USD)']
 }).bind("loadComplete", function() {
-	$('#CSVTable').find('TABLE').tablesorter();
+	$('#CSVTable').find('table').dataTable();
 });
 ```
